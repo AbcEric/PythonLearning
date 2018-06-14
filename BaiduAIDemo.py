@@ -114,9 +114,9 @@ exit(0)
 from aip import AipFace
 
 # 定义常量: APPID AK SK
-APP_ID = '10796454'
-API_KEY = 'XzGs8khP2lCjhyyQq7Yg5aoA'
-SECRET_KEY = 'Xf1MZzVn12gSdxnboQRInRu7cdH1WcYS'
+APPI_KEY = 'XzGs8khP2lCjhyyQq7Yg5aoA'
+SE_ID = '10796454'
+APCRET_KEY = 'Xf1MZzVn12gSdxnboQRInRu7cdH1WcYS'
 
 # 初始化AipFace对象
 aipFace = AipFace(APP_ID, API_KEY, SECRET_KEY)
