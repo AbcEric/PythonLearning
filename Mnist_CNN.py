@@ -21,9 +21,10 @@ def conv2d(x, w):
 def max_pool_2_2(x):
     return tf.nn.max_pool(x, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 
-
+#
+# 主程序
+#
 if __name__ == "__main__":
-
     # 定义输入变量: 图片大小28x28
     x = tf.placeholder("float", shape=[None, 784])
     # 定义输出变量: 10个数字
@@ -129,6 +130,7 @@ if __name__ == "__main__":
 
         #    for i in range(20000):
         for i in range(1000):
+            # 每次取50个数据，每个数据包括784个输入，10个分类结果（只有1个为1）
             batch = mnist.train.next_batch(50)
 
             if i % 100 == 0:
