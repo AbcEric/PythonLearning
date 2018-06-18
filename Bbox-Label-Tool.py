@@ -166,6 +166,7 @@ class LabelTool():
     ##        self.setImage()
     ##        self.loadDir()
 
+    # 读取保持的分类结果：
     def loadNumber(self):
         self.classbox.delete(0, END)
 
@@ -221,13 +222,14 @@ class LabelTool():
                 self.imageList.remove(picture)
 
         # default to the 1st image in the collection
-        self.cur = 1
+        #self.cur = 1
         self.total = len(self.imageList)
 
         self.loadNumber()
 
+        # 切换后标记的最后一个
+        self.cur = len(self.numberList)
         self.loadImage()
-
 
         print('%d images loaded from %s'%(self.total, s))
 
