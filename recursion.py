@@ -2,6 +2,16 @@
 # recursion algorithms：
 #
 
+# 用于模拟static变量，记录全局变量
+class GlobalPara:
+    num = 0
+    permList = []
+    def add(self):
+        GlobalPara.num += 1
+    def addperm(self, nList):
+        GlobalPara.permList.append(nList)
+
+
 # 1.猴子爬山问题：
 def num(n):
     if n == 1 or n == 2:
@@ -47,22 +57,30 @@ def Get24(nList):
                 return True
         return False
     else:
-        # 两两组合任意两个数后递归调用: range()默认从0开始，步长为1，到指定数结束，但不包括指定数！
+        # 两两组合任意两个数后进行递归调用: 穷举（效率较低，位数多时会显现！），重复情况剔除在结束条件时考虑。
+        # range()默认从0开始，步长为1，到指定数结束，但不包括指定数！
         for i in range(num-1):
             for j in range(i+1, num):
                 nextList = GetnextLists(nList, i, j)
                 for k in range(len(nextList)):
-                    if Get24(nextList[k]):
-                        #print(nList, nextList[k])
-                        #找到一个后，继续查找？
-                        break
+                    #if Get24(nextList[k]):
+                        # print(nList, nextList[k])
+                        # 找到一个后，应继续查找？否则可能漏掉除法，所有乘法都可转为除法，如8*3 == 8/(1/3) == 3/(1/8)
+                        #break
+                    Get24(nextList[k])
 
 # 对指定位置两个数进行加减乘除后，返回可能的列表
 def GetnextLists(nList, i, j):
     item = [0]*(len(nList)-1)
     nextLists = []
 
-    # 可简化为：item[i] = nList[i] + nList[j], item[j] = nList的最后一个数，其余值均不变！不需循环(要剔除最后一个数已经使用的情况？)
+    # 判断输入参数的合法性
+    if i >= j or i < 0 or j < 0 or i > (len(nList)-2) or j > (len(nList)-1):
+        print("i and j must be:0=<i<j<len(List)!")
+        return [nList]
+
+    # 可以拼接，也可简化为：item[i] = nList[i] + nList[j], item[j] = nList的最后一个数，其余值均不变！
+    # 但要剔除最后一个数已经使用的情况。
     for k in range(0, len(nList)-1):
         if k < i:
             item[k] = nList[k]
@@ -76,8 +94,6 @@ def GetnextLists(nList, i, j):
     #采用深拷贝，避免为引用，item值改变后会全部改变，不能记录历史情况：
     nextLists.append(item.copy())
 
-    item[i] = nList[i] * nList[j]
-    nextLists.append(item.copy())
     item[i] = nList[i] - nList[j]
     nextLists.append(item.copy())
     item[i] = nList[j] - nList[i]
@@ -90,75 +106,67 @@ def GetnextLists(nList, i, j):
         item[i] = nList[j] / nList[i]
         nextLists.append(item.copy())
 
+    item[i] = nList[i] * nList[j]
+    nextLists.append(item.copy())
+
     return nextLists
 
-# Get24()的第二种方法：简单些，计算不完整，没有全排列，只考虑了第一个数和后面每个的加减乘除的情况！
-number = []
-def PointsGame(n):
-    if n == 1:
-        if number[0] == 24:
-            print("OK:", number)
-            return True
-        else:
-            #print("NO:", number[0])
-            return False
+# Get24()的第二种方法：先去重全排列，再用逆波兰式计算。
+def Get24ByRPN(nList):
+    ListPerm(nList, 0)
 
-    for i in range(n):
-        for j in range(i+1, n):
-                a = number[i]
-                b = number[j]
-                number[j] = number[n-1]     # 把最后一个数填到被处理的第二个数j处
-                print(n, number, a, b)
-                number[i] = a + b
-                if PointsGame(n - 1):
-                    break
-                    #return True
-                number[i] = a - b
-                if PointsGame(n - 1):
-                    break
-                    return True
-                number[i] = b - a
-                if PointsGame(n - 1):
-                    break
-                    return True
-                number[i] = a * b
-                if PointsGame(n - 1):
-                    break
-                    return True
-                #if b != 0 and a%b == 0:
-                if b != 0:
-                    number[i] = a / b
-                    if PointsGame(n - 1):
-                        break
-                        return True
-
-                #if a != 0 and b%a == 0:
-                if a != 0:
-                    number[i] = b / a
-                    if PointsGame(n - 1):
-                        break
-                        return True
-
-                #回朔
-                number[i] = a
-                number[j] = b
-
+    # 逆波兰式的添加方法：如何自动化？
+    if len(nList) != 4:
+        print("Only 4 numbers is allowed")
         return False
 
+    OP = "+-*/"
+    for item in gp.permList:
+        #print(item)
 
-# 3.字符串的去重全排列：参考https://blog.csdn.net/lemon_tree12138/article/details/50986990
+        for op1 in range(4):
+            for op2 in range(4):
+                for op3 in range(4):
+                    str = '%d %d %s %d %s %d %s' % (item[0], item[1], OP[op1], item[2], OP[op2], item[3], OP[op3])
+                    #print(str)
+                    if RPN(str)[0] == 24: print(RPN(str)[1])   # AB*C*D*
+                    str = '%d %d %s %d %d %s %s' % (item[0], item[1], OP[op1], item[2], item[3], OP[op2], OP[op3])
+                    if RPN(str)[0] == 24: print(RPN(str)[1])   # AB*CD**
+                    str = '%d %d %d %s %d %s %s' % (item[0], item[1], item[2], OP[op1], item[3], OP[op2], OP[op3])
+                    if RPN(str)[0] == 24: print(RPN(str)[1])   # ABC*D**
+                    str = '%d %d %d %s %s %d %s' % (item[0], item[1], item[2], OP[op1], OP[op2], item[3], OP[op3])
+                    if RPN(str)[0] == 24: print(RPN(str)[1])   # ABC**D*
+                    str = '%d %d %d %d %s %s %s' % (item[0], item[1], item[2], item[3], OP[op1], OP[op2], OP[op3])
+                    if RPN(str)[0] == 24: print(RPN(str)[1])   # ABCD***
+
+    return True
+
+gp = GlobalPara()
+
+# 对列表数字进行去重全排列，结果记录在全局变量
+def ListPerm(nList, pos):
+    last = len(nList)
+
+    if pos == last:
+        #print(nList)
+        gp.addperm(nList.copy())
+    else:
+        # 第i个数分别与它后面的数字交换就能得到新的排列:有问题！
+        for i in range(pos, last):
+            # 判断是否重复：
+            if IsSwap(nList, pos, i):
+                # 每次交换之后要恢复为原状
+                nList[i], nList[pos] = nList[pos], nList[i]
+                ListPerm(nList, pos+1)
+                nList[i], nList[pos] = nList[pos], nList[i]
+
+# 3.字符串的去重全排列：参考https://blog.csdn.net/lemon_tree12138/article/details/50986990，确保要交换的每一位都不同，即之前未交换过！
+# 若字符串每一位都不同，则每次只需将首位与其他位交换，就可得到一个新的排列。再考虑去重，即判断相同的字符之前交换过否。
 # 若采用非递归算法，关键在于找到替换点和被替点；
-# 用于模拟static变量，记录全局变量
-class GlobalPara:
-    num = 0
-    def add(self):
-        GlobalPara.num += 1
-
 # 需要2个参数: pos表示当前位置，从0开始一直移动到最末一位。
 # 例如：E=(a,b,c), 则perm(E) = a.perm(b,c) + b.perm(a,c) + c.perm(a,b) 先交换
 # 其中，a.perm(b,c) = ab.perm(c) + ac.perm(b) = abc + acb依次递归进行
-gp = GlobalPara()
-def Perm(pszStr, pos):
+def StrPerm(pszStr, pos):
     # 字符串长度，即末尾位置
     last = len(pszStr)
     if pos == last:
@@ -171,10 +179,10 @@ def Perm(pszStr, pos):
             if IsSwap(pszStr, pos, i):
                 # 每次交换之后要恢复为原状
                 pszStr = strSwap(pszStr, i, pos)
-                Perm(pszStr, pos + 1)
+                StrPerm(pszStr, pos + 1)
                 pszStr = strSwap(pszStr, i, pos)
 
-# 去掉重复符号的全排列：在交换之前可以先判断两个符号是否相同，或者已经交换过
+# 去掉重复符号的全排列：在交换之前可以先判断两个符号是否相同，或者已经交换过,即nBegin和nEnd之间是否有和有过nEnd的值！
 def IsSwap(pszStr, nBegin, nEnd):
     for i in range(nBegin, nEnd):
         #print(i,pszStr[i],pszStr[nEnd])
@@ -204,40 +212,44 @@ def strSwap(str, i, j):
 # 对于4个数字而言，共有以下5中加括号的方式：ABCD***,ABC*D**,AB*CD**,ABC**D*,AB*C*D*
 # (A(B(CD)))，(A((BC)D))，((AB)(CD))，((A(BC))D)，(((AB)C)D)。
 def RPN(RPN_str):
-    stack = []
+    stack = []      # 同时记录表达式[num, exp]
     for c in RPN_str.split():
-        if c in '+-*':
+        if c in '+-*/':
             i2 = stack.pop()
             i1 = stack.pop()
-            # print(i1,c,i2)
-            # print(eval('%s'*3 % (i1,c,i2)))
-            stack.append(eval('%s' * 3 % (i1, c, i2)))
+            try:
+                stack.append([eval('%s' * 3 % (i1[0], c, i2[0])), '(%s %s %s)' % (i1[1], c, i2[1])])
+            except (Exception) as e:
+                #print("Error: ", RPN_str, e)
+                return [0, ""]
         else:
             # 非运算符就压栈
-            stack.append(c)
-    #print(stack[0])
+            stack.append([c, c])
+
+    # 去掉最外层括号
+    explen = len(stack[0][1])
+    if stack[0][1][0] == '(' and stack[0][1][explen-1] == ')':
+        stack[0][1] = stack[0][1][1:explen-1]
+
     return stack[0]
+
 
 #
 # Main()入口：
 #
 
-Perm("2464", 0)
+#StrPerm("2232", 0)
 #print(IsSwap("acca", 0, 2))
 
-nl = [2, 3, 6, 1]
-nl = [9, 7, 2, 1]
 nl = [1, 2, 3, 4]
 #nl = [7, 7, 7, 7]
 nl = [6, 6, 6, 6]
+nl = [5, 5, 5, 5]
+nl = [2, 3, 6, 1]
 nl = [4, 2, 6, 8]
-nl = [25, 5, 5]
+nl = [9, 7, 2, 1]
 
 print("LIST = ", nl)
-
-number = nl
-#if PointsGame(3):
-#    print("TRUE:", number)
 
 Get24(nl)
 print("Total solution: ", len(resultList))
@@ -245,4 +257,33 @@ for i in range(len(resultList)):
     print(i+1, " - ", resultList[i])
 
 # 逆波兰表达式：
-print(RPN('3 1 2 + * 3 * 3 +'))
+print(RPN('3 1 2 + * 4 * 3 /'))
+
+Get24ByRPN(nl)
+
+# [2,3,6,1]漏了3除8分之一
+'''
+4*6:
+(2 + 3 - 1) * 6
+2 * (3 - 1) * 6
+(2 - (1 - 3)) * 6
+6 * (3 - (1 - 2))
+
+8*3:
+(2 + 6) * 3 * 1
+(2 + 6) * 3 / 1
+(2 + 6 * 1) * 3
+(2 + 6 / 1) * 3
+(2 * 1 + 6) * 3
+(2 / 1 + 6) * 3
+
+8/0.333:
+(2 + 6) / (1 / 3)
+
+3/0.127:
+3 / (1 / (6 + 2))
+
+2*12
+(3 - 1) * 6 * 2
+
+'''
