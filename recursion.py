@@ -6,11 +6,13 @@
 class GlobalPara:
     num = 0
     permList = []
+    stack = []
     def add(self):
         GlobalPara.num += 1
     def addperm(self, nList):
         GlobalPara.permList.append(nList)
 
+gp = GlobalPara()
 
 # 1.猴子爬山问题：
 def num(n):
@@ -111,7 +113,7 @@ def GetnextLists(nList, i, j):
 
     return nextLists
 
-# Get24()的第二种方法：先去重全排列，再用逆波兰式计算。
+# Get24()的第二种方法：先去重全排列，再用逆波兰式计算。缺点是重复的结果太多！
 def Get24ByRPN(nList):
     ListPerm(nList, 0)
 
@@ -140,8 +142,6 @@ def Get24ByRPN(nList):
                     if RPN(str)[0] == 24: print(RPN(str)[1])   # ABCD***
 
     return True
-
-gp = GlobalPara()
 
 # 对列表数字进行去重全排列，结果记录在全局变量
 def ListPerm(nList, pos):
