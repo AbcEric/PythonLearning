@@ -1,7 +1,8 @@
 #
 # 贪吃蛇游戏：Snake.py
 #
-'''
+# 重点在于记录蛇的运行轨迹！采用列表，每移动一次，添加蛇头当前位置，弹出末尾处元素。只有吃了树莓才不弹出，蛇的长度增加！
+
 import pygame
 import sys
 import time
@@ -9,9 +10,13 @@ import random
 from pygame.locals import *
 
 # 初始化
+WIDTH = 200
+HEIGHT = 300
+CELLSIZE = 20
+
 pygame.init()
 fpsClock = pygame.time.Clock()
-playSurface = pygame.display.set_mode((640, 480))
+playSurface = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption('Snake Go!')
 #image = pygame.image.load('game.ico')
 #pygame.display.set_icon(image)
@@ -23,54 +28,58 @@ whiteColor = pygame.Color(255, 255, 255)
 greyColor = pygame.Color(150, 150, 150)
 LightColor = pygame.Color(220, 220, 220)
 
-def gameOver():
-    print("OVER")
-    gameOverFont = pygame.font.font('arial.ttf', 72)
+def gameOver(playSurface, score):
+    gameOverFont = pygame.font.Font('freesansbold.ttf', 30)
     gameOverSurf = gameOverFont.render('Game Over', True, greyColor)
     gameOverRect = gameOverSurf.get_rect()
-    gameOverRect.midtop = (320, 225)
+    gameOverRect.midtop = (int(WIDTH/2), int(HEIGHT/2))
     playSurface.blit(gameOverSurf, gameOverRect)
 
-    scoreFont = pygame.font.Font('arial.ttf', 48)
+    scoreFont = pygame.font.Font('freesansbold.ttf', 20)
     scoreSurf = scoreFont.render('SCORE: ' + str(score), True, greyColor)
     scoreRect = scoreSurf.get_rect()
-    scoreRect.midtop = (320, 225)
+    scoreRect.midtop = (int(WIDTH/2), int(HEIGHT/4))
     playSurface.blit(scoreSurf, scoreRect)
     pygame.display.flip()
 
-    time.sleep(5)
+    time.sleep(3)
     pygame.quit()
     sys.exit()
+
+def SetBerryPosition():
+    x = random.randrange(1, WIDTH / CELLSIZE)
+    y = random.randrange(1, HEIGHT / CELLSIZE)
+    return [int(x * CELLSIZE), int(y * CELLSIZE)]
 
 # 定义初始位置
 snakePosition = [100, 100]
 snakeSegments = [[100, 100], [80, 100], [60, 100]]
-raspberryPosition = [300, 300]
+raspberryPosition = SetBerryPosition()
 raspberrySpawned = 1
 direction = 'right'
 changeDirection = direction
 score = 0
 
-# 键盘判断蛇的运动：
-for event in pygame.event.get():
-    print(event.type)
-    print(QUIT, KEYDOWN)
-    if event.type == QUIT:
-        pygame.quit()
-        sys.exit()
-    elif event.type == KEYDOWN:
-        if event.key == K_RIGHT or event.key == ord('d'):
-            changeDirection = 'right'
-        if event.key == K_LEFT or event.key == ord('a'):
-            changeDirection = 'left'
-        if event.key == K_UP or event.key == ord('w'):
-            changeDirection = 'up'
-        if event.key == K_DOWN or event.key == ord('s'):
-            changeDirection = 'down'
-        if event.key == K_ESCAPE:
-            pygame.event.post(pygame.event.Event(QUIT))
+while True:
+    # 键盘判断蛇的运动：
+    for event in pygame.event.get():
+        #print(event.type)
+        if event.type == QUIT:
+            pygame.quit()
+            sys.exit()
+        elif event.type == KEYDOWN:
+            if event.key == K_RIGHT or event.key == ord('d'):
+                changeDirection = 'right'
+            if event.key == K_LEFT or event.key == ord('a'):
+                changeDirection = 'left'
+            if event.key == K_UP or event.key == ord('w'):
+                changeDirection = 'up'
+            if event.key == K_DOWN or event.key == ord('s'):
+                changeDirection = 'down'
+            if event.key == K_ESCAPE:
+                pygame.event.post(pygame.event.Event(QUIT))
 
-    # 不能反向运动：
+    # 不能反向运动：符合条件才能改变方向，否则方向不变继续前进
     if changeDirection == 'right' and not direction == 'left':
         direction = changeDirection
     if changeDirection == 'left' and not direction == 'right':
@@ -91,37 +100,39 @@ for event in pygame.event.get():
         snakePosition[1] += 20
 
     # 加入蛇头当前位置
-    print(snakePosition)
+    #print(snakePosition, snakeSegments)
     snakeSegments.insert(0, list(snakePosition))
 
     # 判断是否吃到树莓：
     if snakePosition[0] == raspberryPosition[0] and snakePosition[1] == raspberryPosition[1]:
         raspberrySpawned = 0
     else:
+        # 没有吃到树莓，则继续移动snake，弹出尾部，前面已加入当前头部到snakeSegment：
         snakeSegments.pop()
 
     # 重新生成树莓：
     if raspberrySpawned == 0:
-        x = random.randrange(1, 32)
-        y = random.randrange(1, 24)
-        raspberryPosition = [int(x*20), int(y*20)]
+        raspberryPosition = SetBerryPosition()
         raspberrySpawned = 1
         score += 1
 
-    # 刷新显示屏：
+    # 刷新显示：
     playSurface.fill(blackColor)
     for position in snakeSegments[1:]:
-        pygame.draw.rect(playSurface, whiteColor, Rect(position[0], position[1], 20, 20))
-    pygame.draw.rect(playSurface, LightColor, Rect(snakePosition[0], snakePosition[1], 20, 20))
-    pygame.draw.rect(playSurface, redColor, Rect(raspberryPosition[0], raspberryPosition[1], 20, 20))
+        # 显示蛇：
+        pygame.draw.rect(playSurface, whiteColor, Rect(position[0], position[1], CELLSIZE, CELLSIZE))
+    # 显示蛇头：
+    pygame.draw.rect(playSurface, LightColor, Rect(snakePosition[0], snakePosition[1], CELLSIZE, CELLSIZE))
+    # 显示树莓：
+    pygame.draw.rect(playSurface, redColor, Rect(raspberryPosition[0], raspberryPosition[1], CELLSIZE, CELLSIZE))
     pygame.display.flip()
 
     # 判断是否死亡：
-    print("??:", snakePosition, snakeSegments)
-    if snakePosition[0] > 620 or snakePosition[0] < 0:
+    if snakePosition[0] > WIDTH-CELLSIZE or snakePosition[0] < 0:
         gameOver(playSurface, score)
-    if snakePosition[1] > 460 or snakePosition[1] < 0:
+    if snakePosition[1] > HEIGHT-CELLSIZE or snakePosition[1] < 0:
         gameOver(playSurface, score)
+    # 蛇头和自身交叉也死亡！
     for snakeBody in snakeSegments[1:]:
         if snakePosition[0] == snakeBody[0] and snakePosition[1] == snakeBody[1]:
             gameOver(playSurface, score)
@@ -148,9 +159,9 @@ import pygame
 import sys
 from pygame.locals import *
 
-Snakespeed = 2
-Window_Width = 400
-Window_Height = 600
+Snakespeed = 3
+Window_Width = 200
+Window_Height = 300
 Cell_Size = 20  # Width and height of the cells
 # Ensuring that the cells fit perfectly in the window. eg if cell size was
 # 10 and window width or windowheight were 15 only 1.5 cells would fit.
@@ -187,7 +198,7 @@ def main():
     SnakespeedCLOCK = pygame.time.Clock()
     DISPLAYSURF = pygame.display.set_mode((Window_Width, Window_Height))
     BASICFONT = pygame.font.Font('freesansbold.ttf', 18)
-    pygame.display.set_caption('Snake')
+    pygame.display.set_caption('Snake Go')
 
     showStartScreen()
     while True:
@@ -196,8 +207,8 @@ def main():
 
 def runGame():
     # Set a random start point.
-    startx = random.randint(5, Cell_W - 6)
-    starty = random.randint(5, Cell_H - 6)
+    startx = random.randint(3, Cell_W - 5)
+    starty = random.randint(3, Cell_H - 5)
     wormCoords = [{'x': startx, 'y': starty},
                   {'x': startx - 1, 'y': starty},
                   {'x': startx - 2, 'y': starty}]
@@ -275,10 +286,11 @@ def checkForKeyPress():
     return keyUpEvents[0].key
 
 def showStartScreen():
-    titleFont = pygame.font.Font('freesansbold.ttf', 100)
+    titleFont = pygame.font.Font('freesansbold.ttf', 50)
     titleSurf1 = titleFont.render('Snake!', True, White, DARKGreen)
     degrees1 = 0
-    degrees2 = 0
+    #degrees2 = 0
+
     while True:
         DISPLAYSURF.fill(BGCOLOR)
         rotatedSurf1 = pygame.transform.rotate(titleSurf1, degrees1)
@@ -291,10 +303,11 @@ def showStartScreen():
         if checkForKeyPress():
             pygame.event.get()  # clear event queue
             return
+
         pygame.display.update()
         SnakespeedCLOCK.tick(Snakespeed)
         degrees1 += 3  # rotate by 3 degrees each frame
-        degrees2 += 7  # rotate by 7 degrees each frame
+        #degrees2 += 7  # rotate by 7 degrees each frame ?
 
 def terminate():
     pygame.quit()
@@ -304,7 +317,7 @@ def getRandomLocation():
     return {'x': random.randint(0, Cell_W - 1), 'y': random.randint(0, Cell_H - 1)}
 
 def showGameOverScreen():
-    gameOverFont = pygame.font.Font('freesansbold.ttf', 100)
+    gameOverFont = pygame.font.Font('freesansbold.ttf', 50)
     gameSurf = gameOverFont.render('Game', True, White)
     overSurf = gameOverFont.render('Over', True, White)
     gameRect = gameSurf.get_rect()
@@ -357,3 +370,4 @@ if __name__ == '__main__':
         main()
     except SystemExit:
         pass
+'''

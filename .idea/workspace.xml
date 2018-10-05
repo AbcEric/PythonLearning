@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a323486b-7f2a-40d1-8e27-dc6b59e90218" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/snake_game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake_game.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,31 +19,31 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="15" />
+          <entry key="py" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="11" />
+          <entry key="Python" value="12" />
           <entry key="Scratch" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="11" />
-          <entry key="py" value="9341" />
+          <entry key="py" value="9915" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="11" />
-          <entry key="Python" value="9050" />
+          <entry key="Python" value="9624" />
           <entry key="Scratch" value="291" />
         </counts>
       </usages-collector>
@@ -55,7 +54,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/python_demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
+            <state relative-caret-position="630">
               <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
               <folding>
                 <marker date="1538191955233" expanded="true" signature="66:71" ph="..." />
@@ -67,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="270">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#22#35#0" expanded="true" />
               </folding>
@@ -76,15 +75,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snake_game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3257">
-              <caret line="351" column="73" lean-forward="true" selection-start-line="351" selection-start-column="73" selection-end-line="351" selection-end-column="73" />
+            <state relative-caret-position="-1470">
+              <caret line="38" column="73" selection-start-line="38" selection-start-column="73" selection-end-line="38" selection-end-column="73" />
               <folding>
-                <element signature="e#4232#4245#0" expanded="true" />
-                <marker date="1538673579561" expanded="true" signature="553:607" ph="..." />
+                <element signature="e#23#36#0" expanded="true" />
+                <marker date="1538708762254" expanded="true" signature="658:718" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/plane_game.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-465">
+              <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -107,6 +115,7 @@
       <find>typeSelect</find>
       <find>% {</find>
       <find>exit</find>
+      <find>QUIT</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -132,10 +141,11 @@
         <option value="$PROJECT_DIR$/normal_distribution_simulate.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
         <option value="$PROJECT_DIR$/snake_game.py" />
+        <option value="$PROJECT_DIR$/plane_game.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="272" />
     <option name="y" value="97" />
     <option name="width" value="1378" />
@@ -186,28 +196,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.snake_game">
-    <configuration name="RF" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonLearning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RF.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.plane_game">
     <configuration name="classify_image" type="PythonConfigurationType" factoryName="Python">
       <module name="PythonLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -242,6 +231,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/normal_distribution_simulate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="plane_game" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plane_game.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -315,19 +325,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.classify_image" />
-      <item itemvalue="Python.RF" />
       <item itemvalue="Python.recursion" />
       <item itemvalue="Python.python_demo" />
       <item itemvalue="Python.normal_distribution_simulate" />
       <item itemvalue="Python.snake_game" />
+      <item itemvalue="Python.plane_game" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.plane_game" />
         <item itemvalue="Python.snake_game" />
         <item itemvalue="Python.normal_distribution_simulate" />
         <item itemvalue="Python.recursion" />
         <item itemvalue="Python.python_demo" />
-        <item itemvalue="Python.RF" />
       </list>
     </recent_temporary>
   </component>
@@ -345,15 +355,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984227" visible="true" weight="0.17497349" />
       <window_info id="Structure" order="1" sideWeight="0.50157726" side_tool="true" weight="0.24925373" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2805588" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2805588" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49926794" weight="0.39697322" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -482,15 +491,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="147" column="21" lean-forward="true" selection-start-line="147" selection-start-column="21" selection-end-line="147" selection-end-column="21" />
-          <folding>
-            <marker date="1538296599803" expanded="true" signature="4621:5055" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/python_demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
+        <state relative-caret-position="630">
           <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
           <folding>
             <marker date="1538191955233" expanded="true" signature="66:71" ph="..." />
@@ -500,8 +506,8 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="270">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="e#22#35#0" expanded="true" />
           </folding>
@@ -510,12 +516,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/snake_game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3257">
-          <caret line="351" column="73" lean-forward="true" selection-start-line="351" selection-start-column="73" selection-end-line="351" selection-end-column="73" />
+        <state relative-caret-position="-1470">
+          <caret line="38" column="73" selection-start-line="38" selection-start-column="73" selection-end-line="38" selection-end-column="73" />
           <folding>
-            <element signature="e#4232#4245#0" expanded="true" />
-            <marker date="1538673579561" expanded="true" signature="553:607" ph="..." />
+            <element signature="e#23#36#0" expanded="true" />
+            <marker date="1538708762254" expanded="true" signature="658:718" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane_game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-465">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
         </state>
       </provider>
     </entry>
