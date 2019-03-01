@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a323486b-7f2a-40d1-8e27-dc6b59e90218" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/BFS_DFS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonDemo.py" afterDir="false" />
     </list>
@@ -15,37 +16,37 @@
     <session id="-214390331">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="4" />
+          <entry key="project.open.time.7" value="5" />
           <entry key="project.open.time.8" value="3" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="22" />
+          <entry key="py" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="18" />
+          <entry key="Python" value="19" />
           <entry key="Scratch" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="11" />
-          <entry key="py" value="12663" />
+          <entry key="py" value="13332" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="11" />
-          <entry key="Python" value="12320" />
+          <entry key="Python" value="12989" />
           <entry key="Scratch" value="343" />
         </counts>
       </usages-collector>
@@ -65,18 +66,28 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PythonDemo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="95" selection-start-line="93" selection-end-line="95" />
+            <state relative-caret-position="317">
+              <caret line="123" column="17" lean-forward="true" selection-start-line="123" selection-start-column="17" selection-end-line="123" selection-end-column="17" />
               <folding>
-                <marker date="1545101084099" expanded="true" signature="646:655" ph="..." />
-                <marker date="1545101084099" expanded="true" signature="808:817" ph="..." />
-                <marker date="1545101084099" expanded="true" signature="997:1986" ph="..." />
-                <marker date="1545101084099" expanded="true" signature="1488:1954" ph="..." />
-                <marker date="1545101084099" expanded="true" signature="1936:1954" ph="..." />
+                <marker date="1551261001127" expanded="true" signature="646:655" ph="..." />
+                <marker date="1551261001127" expanded="true" signature="808:817" ph="..." />
+                <marker date="1551261001127" expanded="true" signature="997:1986" ph="..." />
+                <marker date="1551261001127" expanded="true" signature="1488:1954" ph="..." />
+                <marker date="1551261001127" expanded="true" signature="2047:2048" ph="..." />
+                <marker date="1551261001127" expanded="true" signature="2052:2548" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BFS_DFS.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -128,6 +139,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
         <option value="$PROJECT_DIR$/minesweep.py" />
         <option value="$PROJECT_DIR$/PythonDemo.py" />
+        <option value="$PROJECT_DIR$/BFS_DFS.py" />
       </list>
     </option>
   </component>
@@ -142,6 +154,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,7 +166,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -179,7 +191,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.PythonDemo">
+  <component name="RunManager" selected="Python.BFS_DFS">
+    <configuration name="BFS_DFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BFS_DFS.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="PythonDemo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -243,27 +276,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="normal_distribution_simulate" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonLearning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/normal_distribution_simulate.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="plane_game" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -308,19 +320,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.classify_image" />
-      <item itemvalue="Python.normal_distribution_simulate" />
       <item itemvalue="Python.snake_game" />
       <item itemvalue="Python.plane_game" />
       <item itemvalue="Python.minesweep" />
       <item itemvalue="Python.PythonDemo" />
+      <item itemvalue="Python.BFS_DFS" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.BFS_DFS" />
         <item itemvalue="Python.PythonDemo" />
         <item itemvalue="Python.minesweep" />
         <item itemvalue="Python.plane_game" />
         <item itemvalue="Python.snake_game" />
-        <item itemvalue="Python.normal_distribution_simulate" />
       </list>
     </recent_temporary>
   </component>
@@ -346,7 +358,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27706635" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33410943" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49926794" weight="0.39697322" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -508,15 +520,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonDemo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="95" selection-start-line="93" selection-end-line="95" />
+        <state relative-caret-position="317">
+          <caret line="123" column="17" lean-forward="true" selection-start-line="123" selection-start-column="17" selection-end-line="123" selection-end-column="17" />
           <folding>
-            <marker date="1545101084099" expanded="true" signature="646:655" ph="..." />
-            <marker date="1545101084099" expanded="true" signature="808:817" ph="..." />
-            <marker date="1545101084099" expanded="true" signature="997:1986" ph="..." />
-            <marker date="1545101084099" expanded="true" signature="1488:1954" ph="..." />
-            <marker date="1545101084099" expanded="true" signature="1936:1954" ph="..." />
+            <marker date="1551261001127" expanded="true" signature="646:655" ph="..." />
+            <marker date="1551261001127" expanded="true" signature="808:817" ph="..." />
+            <marker date="1551261001127" expanded="true" signature="997:1986" ph="..." />
+            <marker date="1551261001127" expanded="true" signature="1488:1954" ph="..." />
+            <marker date="1551261001127" expanded="true" signature="2047:2048" ph="..." />
+            <marker date="1551261001127" expanded="true" signature="2052:2548" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BFS_DFS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>

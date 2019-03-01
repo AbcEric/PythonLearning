@@ -91,19 +91,57 @@ class DictDemo(object):
 # gen = GeneratorDemo()
 # gen.GetByFor(10)
 
-dic = DictDemo(dic={"name": "Eric", "height": 170, "gender": "male"},
-               msg="Last Christmas, I give you my heart. But I never know ....")
-# dic = DictDemo()
-print(dic.get_charactor_count())
-print(dic.get_value("height"))
-print(dic.get_key(170))
-print(dic.get_value("A"))
-dic.add_key("A")
-dic.add_key("B")
-print(dic.get_value("B"))
 
-for ch in dic.msg:
-    dic.add_key(ch)
-    print(dic.get_value(ch), end=" ")
-print()
-print(dic.dic)
+
+def DictTest():
+    dic = DictDemo(dic={"name": "Eric", "height": 170, "gender": "male"},
+               msg="Last Christmas, I give you my heart. But I never know ....")
+    # dic = DictDemo()
+    print(dic.get_charactor_count())
+    print(dic.get_value("height"))
+    print(dic.get_key(170))
+    print(dic.get_value("A"))
+    dic.add_key("A")
+    dic.add_key("B")
+    print(dic.get_value("B"))
+
+    for ch in dic.msg:
+        dic.add_key(ch)
+        print(dic.get_value(ch), end=" ")
+    print()
+    print(dic.dic)
+
+import numpy
+
+x1, k1, x2, k2 = map(int, input().split())
+v1, v2 = int(str(x1) * k1), int(str(x2) * k2)
+print(v1, v2)
+if v1 == v2:
+    print("Equal")
+elif v1 > v2:
+    print("Greater")
+else:
+    print("Less")
+
+
+
+def repeat(x, k):
+    return x ** k
+
+str = input("Please input 4 numbers, seperated by blank:")
+num = str.split(" ")
+
+if int(num[0])<1 or int(num[2])<1 or int(num[0])>10^9 or int(num[2])>10^9:
+    exit(0)
+if int(num[1])<1 or int(num[3])<1 or int(num[1])>50 or int(num[3])>50:
+    exit(0)
+
+n1 = repeat(int(num[0]), int(num[1]))
+n2 = repeat(int(num[2]), int(num[3]))
+
+if n1 == n2:
+    print("Equal")
+elif n1 > n2:
+    print("Greater")
+else:
+    print("Less")
