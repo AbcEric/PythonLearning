@@ -1,0 +1,38 @@
+Starting var:.. num = 2
+10:59:31.515500 call       374 @pysnooper.snoop("file.log")
+10:59:31.515500 line       376     str = "STR_TEST_"
+New var:....... str = 'STR_TEST_'
+10:59:31.518000 line       377     print("1:")
+10:59:31.518000 line       378     str1 = str + "X" * num              # 速度快！
+New var:....... str1 = 'STR_TEST_XX'
+10:59:31.520500 line       379     print(len(str1))
+10:59:31.520500 line       380     print(str1[:100])
+10:59:31.520500 line       381     print("2:")
+10:59:31.520500 line       382     for i in range(num):
+New var:....... i = 0
+10:59:31.520500 line       383         str += "X"                      # 当num变大时，速度很慢！
+Modified var:.. str = 'STR_TEST_X'
+10:59:31.523000 line       382     for i in range(num):
+Modified var:.. i = 1
+10:59:31.523000 line       383         str += "X"                      # 当num变大时，速度很慢！
+Modified var:.. str = 'STR_TEST_XX'
+10:59:31.523000 line       382     for i in range(num):
+10:59:31.525500 line       384     print(len(str))
+10:59:31.525500 line       385     print(str[:100])
+10:59:31.525500 line       387     print("3:")
+10:59:31.525500 line       388     list = ["LIST"]
+New var:....... list = ['LIST']
+10:59:31.525500 line       389     for i in range(num):
+Modified var:.. i = 0
+10:59:31.528000 line       390         tmplist = list.append("X")                # 速度并不慢！
+New var:....... tmplist = None
+Modified var:.. list = ['LIST', 'X']
+10:59:31.528000 line       389     for i in range(num):
+Modified var:.. i = 1
+10:59:31.528000 line       390         tmplist = list.append("X")                # 速度并不慢！
+Modified var:.. list = ['LIST', 'X', 'X']
+10:59:31.530500 line       389     for i in range(num):
+10:59:31.530500 line       391     print(len(list))
+10:59:31.530500 line       392     print(list[:10])
+10:59:31.530500 line       393     return
+10:59:31.530500 return     393     return
