@@ -2,109 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a323486b-7f2a-40d1-8e27-dc6b59e90218" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppiumTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/21In9x.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InceptionV3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PythonLearning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonLearning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonDemo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SendNotesMail.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.wps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/session.file" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KerasDemo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TesseractOcr.py" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-214390331">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="39" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="4" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.3" value="3" />
-          <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.6" value="4" />
-          <entry key="project.open.time.7" value="17" />
-          <entry key="project.open.time.8" value="8" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="43" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="log" value="1" />
-          <entry key="py" value="63" />
-          <entry key="pyi" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="59" />
-          <entry key="PythonStub" value="1" />
-          <entry key="Scratch" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="11" />
-          <entry key="py" value="47743" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="11" />
-          <entry key="Python" value="47400" />
-          <entry key="Scratch" value="343" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PythonDemo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="373" column="18" selection-start-line="373" selection-start-column="18" selection-end-line="373" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AppiumTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="180" column="51" lean-forward="true" selection-start-line="180" selection-start-column="51" selection-end-line="180" selection-end-column="51" />
-              <folding>
-                <element signature="e#184#193#0" expanded="true" />
-                <marker date="1577290674432" expanded="true" signature="504:539" ph="..." />
-                <marker date="1577290674432" expanded="true" signature="1257:1265" ph="..." />
-                <marker date="1577290674432" expanded="true" signature="2739:2748" ph="..." />
-                <marker date="1577290674432" expanded="true" signature="2769:3272" ph="..." />
-                <marker date="1577290674432" expanded="true" signature="3316:3317" ph="..." />
-                <marker date="1577290674432" expanded="true" signature="3316:3325" ph="..." />
-                <marker date="1577290674432" expanded="true" signature="4895:4900" ph="..." />
-                <marker date="1577290674432" expanded="true" signature="4895:4904" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/Anaconda3/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="195" column="29" lean-forward="true" selection-start-line="195" selection-start-column="29" selection-end-line="195" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -150,66 +59,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/../models/tutorials/image/imagenet/classify_image.py" />
-        <option value="$PROJECT_DIR$/../models/tutorials/image/imagenet/freeze.py" />
-        <option value="$PROJECT_DIR$/../models/tutorials/image/imagenet/predict.py" />
-        <option value="$PROJECT_DIR$/../models/tutorials/image/imagenet/tiny_model.py" />
-        <option value="$PROJECT_DIR$/Verifycode-CNN.py" />
-        <option value="$PROJECT_DIR$/../AutoRegistration4Leyue/VerifycodeImgConvert.py" />
-        <option value="$PROJECT_DIR$/../AutoRegistration4Leyue/Bbox-Label-Tool.py" />
-        <option value="$PROJECT_DIR$/Bbox-Label-Tool.py" />
-        <option value="$PROJECT_DIR$/docx_edit.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
-        <option value="$PROJECT_DIR$/RF.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/python_demo.py" />
-        <option value="$PROJECT_DIR$/recursion.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py" />
-        <option value="$PROJECT_DIR$/normal_distribution_simulate.py" />
-        <option value="$PROJECT_DIR$/snake_game.py" />
-        <option value="$PROJECT_DIR$/plane_game.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
-        <option value="$PROJECT_DIR$/minesweep.py" />
-        <option value="$PROJECT_DIR$/BFS_DFS.py" />
-        <option value="$PROJECT_DIR$/QQMailRecvAndSend.py" />
-        <option value="$PROJECT_DIR$/../AutoRegistration4Leyue/AutoReg.py" />
-        <option value="$PROJECT_DIR$/MailRecvAndSend.py" />
-        <option value="$PROJECT_DIR$/WordConvert.py" />
-        <option value="$PROJECT_DIR$/PythonDemo.py" />
-        <option value="$PROJECT_DIR$/AppiumTest.py" />
-      </list>
-    </option>
+  <component name="ProjectId" id="1XTm1Gs6rgOZidHLcUsmSEyo56c" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="width" value="1919" />
-    <option name="height" value="1032" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PythonLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonLearning" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -217,19 +80,28 @@
       <recent name="C:\MyProjects\PythonLearning" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.AppiumTest">
+  <component name="RunManager" selected="Python.InceptionV3">
+    <configuration name="21In9x" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/21In9x.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="AppiumTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -251,7 +123,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MailRecvAndSend" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="InceptionV3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -263,7 +135,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MailRecvAndSend.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/InceptionV3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -285,27 +157,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonDemo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="QQMailRecvAndSend" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonLearning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/QQMailRecvAndSend.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -360,19 +211,31 @@
       <item itemvalue="Python.classify_image" />
       <item itemvalue="Python.PythonDemo" />
       <item itemvalue="Python.WordConvert" />
-      <item itemvalue="Python.QQMailRecvAndSend" />
-      <item itemvalue="Python.MailRecvAndSend" />
       <item itemvalue="Python.AppiumTest" />
+      <item itemvalue="Python.21In9x" />
+      <item itemvalue="Python.InceptionV3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.InceptionV3" />
+        <item itemvalue="Python.21In9x" />
         <item itemvalue="Python.AppiumTest" />
         <item itemvalue="Python.PythonDemo" />
         <item itemvalue="Python.WordConvert" />
-        <item itemvalue="Python.MailRecvAndSend" />
-        <item itemvalue="Python.QQMailRecvAndSend" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -387,31 +250,35 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="1" y="0" width="1919" height="1032" extended-state="0" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984227" visible="true" weight="0.22281736" />
-      <window_info id="Structure" order="1" sideWeight="0.50157726" side_tool="true" weight="0.24925373" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34363854" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49926794" weight="0.5612366" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32876712" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50073206" side_tool="true" weight="0.3997006" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="429" height="832" id="Documentation" order="3" side_tool="true" weight="0.32951444" />
-    </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="WindowStateProjectService">
+    <state x="916" y="523" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581083741345">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="916" y="523" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1581083741345" />
+    <state width="2539" height="432" key="GridCell.Tab.0.bottom" timestamp="1581093199691">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="432" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1581093199691" />
+    <state width="2539" height="432" key="GridCell.Tab.0.center" timestamp="1581093199691">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="432" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1581093199691" />
+    <state width="2539" height="432" key="GridCell.Tab.0.left" timestamp="1581093199691">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="432" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1581093199691" />
+    <state width="2539" height="432" key="GridCell.Tab.0.right" timestamp="1581093199691">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="432" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1581093199691" />
+    <state x="781" y="362" key="SettingsEditor" timestamp="1581078335525">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="781" y="362" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1581078335525" />
+    <state x="943" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1581078702287">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="943" y="325" width="672" height="678" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1581078702287" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -433,304 +300,5 @@
         <watch expression="p._element" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../AutoRegistration4Leyue/VerifycodeImgConvert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Anaconda3/Lib/codecs.py" />
-    <entry file="file://C:/Anaconda3/Lib/site-packages/win32com/client/dynamic.py" />
-    <entry file="file://$PROJECT_DIR$/docx_edit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#17#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RF.py" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autojump.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/predict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1313" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Verifycode-CNN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2380">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/freeze.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py" />
-    <entry file="file://D:/Anaconda3/Lib/site-packages/sklearn/utils/validation.py" />
-    <entry file="file://$PROJECT_DIR$/normal_distribution_simulate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recursion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="147" column="21" lean-forward="true" selection-start-line="147" selection-start-column="21" selection-end-line="147" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/python_demo.py" />
-    <entry file="file://$PROJECT_DIR$/snake_game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/minesweep.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane_game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-2036615904/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="2841" column="8" selection-start-line="2841" selection-start-column="8" selection-end-line="2841" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KerasDemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BFS_DFS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda3/Lib/site-packages/win32com/client/dynamic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="528" column="39" lean-forward="true" selection-start-line="528" selection-start-column="39" selection-end-line="528" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda3/Lib/site-packages/docx/image/image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda3/Lib/site-packages/docx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda3/Lib/site-packages/docx/text/paragraph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3630">
-          <caret line="128" selection-start-line="128" selection-end-line="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/gen_py/3.6/00020905-0000-4B30-A977-D214852036FFx0x3x0/Documents.py" />
-    <entry file="file://D:/Anaconda3/Lib/site-packages/docx/opc/phys_pkg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda3/Lib/site-packages/docx/opc/package.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="126" column="11" lean-forward="true" selection-start-line="126" selection-start-column="11" selection-end-line="126" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda3/Lib/site-packages/docx/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda3/Lib/site-packages/win32com/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda3/pkgs/pyqt-5.6.0-py36hb5ed885_5/Lib/site-packages/PyQt5/QtGui.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2458" column="59" lean-forward="true" selection-start-line="2458" selection-start-column="59" selection-end-line="2458" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda3/Lib/site-packages/win32com/client/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16200">
-          <caret line="544" selection-start-line="544" selection-end-line="544" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda3/Lib/email/message.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="976" column="47" lean-forward="true" selection-start-line="976" selection-start-column="47" selection-end-line="976" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda3/Lib/email/mime/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QQMailRecvAndSend.py" />
-    <entry file="file://D:/Anaconda3/Lib/email/mime/text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda3/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="319" selection-start-line="319" selection-end-line="319" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda3/Lib/site-packages/docx/blkcntnr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda3/Lib/site-packages/docx/document.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AutoRegistration4Leyue/AutoReg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="428" column="45" selection-start-line="427" selection-start-column="11" selection-end-line="428" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda3/Lib/multiprocessing/reduction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WordConvert.py" />
-    <entry file="file://D:/Anaconda3/Lib/site-packages/docx/styles/styles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="148" column="29" selection-start-line="148" selection-start-column="29" selection-end-line="148" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MailRecvAndSend.py" />
-    <entry file="file://$PROJECT_DIR$/SendNotesMail.py" />
-    <entry file="file://$PROJECT_DIR$/PythonDemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="373" column="18" selection-start-line="373" selection-start-column="18" selection-end-line="373" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda3/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="156" selection-start-line="156" selection-end-line="156" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda3/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="195" column="29" lean-forward="true" selection-start-line="195" selection-start-column="29" selection-end-line="195" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AppiumTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="180" column="51" lean-forward="true" selection-start-line="180" selection-start-column="51" selection-end-line="180" selection-end-column="51" />
-          <folding>
-            <element signature="e#184#193#0" expanded="true" />
-            <marker date="1577290674432" expanded="true" signature="504:539" ph="..." />
-            <marker date="1577290674432" expanded="true" signature="1257:1265" ph="..." />
-            <marker date="1577290674432" expanded="true" signature="2739:2748" ph="..." />
-            <marker date="1577290674432" expanded="true" signature="2769:3272" ph="..." />
-            <marker date="1577290674432" expanded="true" signature="3316:3317" ph="..." />
-            <marker date="1577290674432" expanded="true" signature="3316:3325" ph="..." />
-            <marker date="1577290674432" expanded="true" signature="4895:4900" ph="..." />
-            <marker date="1577290674432" expanded="true" signature="4895:4904" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
