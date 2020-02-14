@@ -1,6 +1,6 @@
 #
-# 用神经网络训练，模拟玩21点：从朴素策略到深度学习
-#
+# 用神经网络训练，模拟玩21点：从朴素策略（只有低于等于11点时才Hit跟进，避免爆牌）到深度学习（根据庄家明牌的点数，玩家点数，是否持有Ace牌等来决定是否Hit）
+# 通过ROC曲线来判断神经网络模型是否增加了价值：在权衡收益（真实正利率）和成本（伪正利率）之间的权衡程度如何，曲线下的面积越大，模型越好，ROC曲线基本上是模型的成本/收益曲线（不同投资组合下的预期收益边界，通常为弯曲形状，风险越高则相应的回报也要越高，与此同时，承担更多风险的收益在递减）。
 
 # 玩法；
 # 又名BlackJack，起源于法国。A牌即Ace既可算作1点也可算作11点。玩家停牌时，点数一律视为最大而尽量不爆。如：A+3+A视作15点
@@ -15,6 +15,8 @@
 # 所有闲家都与庄家比较。黑杰克为特殊牌型，比其他所有牌型都大。除黑杰克，其他牌型都以点数比较大小。
 # 庄家和闲家点数相同，或都拿到黑杰克，则为平局。庄家和闲家都爆牌，系统判断庄家赢。
 
+# 一门花色从1-10,J,Q,K有13张：其中为10的有4张，占比高达4/13，因此：若庄家的明牌为7或更多，获胜的几率将大很多。
+# 而玩家的手牌总数在12~16时（绝望之谷）最不利，玩家面临的主要风险是，他们被迫首先采取行动（并在发牌者面前面临破产的风险）。
 
 import numpy as np
 import pandas as pd
@@ -103,7 +105,7 @@ def play_game(dealer_hand, player_hands, blackjack, curr_player_results, dealer_
             if set(player_hands[player]) == blackjack:
                 curr_player_results[0, player] = 1
             else:
-                # Hit randomly, check for busts：只能要一次
+                # Hit randomly（这里是根据hit_stay来决定）, check for busts：只能要一次？
                 if (hit_stay >= 0.5) and (total_up(player_hands[player]) != 21):
                     player_hands[player].append(dealer_cards.pop(0))
                     action = 1
@@ -160,7 +162,7 @@ for stack in range(stacks):
         live_total = []
         live_action = []
 
-        # Deal FIRST card
+        # Deal FIRST card：先发牌给玩家，再发庄家，采用pop函数（返回列表的第一个元素，同时将其从该列表中删除）
         for player, hand in enumerate(player_hands):
             player_hands[player].append(dealer_cards.pop(0))
         dealer_hand.append(dealer_cards.pop(0))
@@ -181,7 +183,8 @@ for stack in range(stacks):
 
         # print("dealer_hand(庄家)=", dealer_hand, "player_hands=", player_hands)
 
-        # dealer_cards为剩下的牌，curr_player_results为当前的结果, live_total是每次的实际点数，action是否要牌。
+        # dealer_cards为剩下的牌，curr_player_results为当前的结果（1代表胜利，0代表平局，-1代表失败）,
+        # live_total是每次的实际点数，action是否要牌。
         curr_player_results, dealer_cards, action = play_game(dealer_hand, player_hands,
                                                               blackjack, curr_player_results,
                                                               dealer_cards, hit_stay)
